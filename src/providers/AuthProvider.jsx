@@ -10,7 +10,7 @@ const AuthProvider = ({ children }) => {
     if (isEmpty(user)) return
 
     localStorage.setItem('user', JSON.stringify(user))
-    return setCurrentUser(user)
+    setCurrentUser(user)
   }
 
   const logoutHandler = () => {

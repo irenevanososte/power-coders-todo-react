@@ -1,5 +1,5 @@
-import { createContext } from 'react'
-import AuthContext from '../contexts/AuthContext.js'
+import { useContext } from 'react'
+import AuthContext from '../contexts/AuthContext'
 
 /*
   {
@@ -12,7 +12,7 @@ import AuthContext from '../contexts/AuthContext.js'
 */
 
 function useAuth() {
-  return createContext(AuthContext)
+  return useContext(AuthContext)
 }
 
 export default useAuth
