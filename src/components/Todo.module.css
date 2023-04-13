@@ -1,0 +1,17 @@
+.todo_item {
+  display: flex;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.trashButton {
+  background: none;
+  border: none;
+}
+
+.trashCan {
+  height: 1.2em;
+  flex-grow: 0;
+}

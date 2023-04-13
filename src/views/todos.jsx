@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import useServer from "../hooks/useServer.js"
+import Todo from "../components/Todo.jsx"
 
 function Todos() {
   const { get, post } = useServer()
@@ -26,7 +27,7 @@ function Todos() {
   return <>
     <h1>ToDos</h1>
     { todos && <ul>
-      {todos.map(todo => <li key={todo.id}>{todo.content}</li>)}
+      {todos.map(todo => <Todo key={todo.id} todo={todo} />)}
     </ul> }
 
     <form onSubmit={createTodoHandler}>
