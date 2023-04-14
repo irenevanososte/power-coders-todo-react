@@ -6,11 +6,13 @@ import { PrivateRoutes } from './components/PrivateRoutes'
 import Index from './views/index'
 import Login from './views/login'
 import Todos from './views/todos'
+import Notifications from './components/Notifications'
 
 function App() {
 
   return (
     <>
+      <Notifications />
       <Navbar />
       <Routes>
         <Route path="/" element={<Index />} />
